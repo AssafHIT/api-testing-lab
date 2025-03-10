@@ -27,7 +27,6 @@ def test_register_user_missing_password(email):
     )
     assert response.status_code == 400, f"Expected status code 400, but got {response.status_code}"
     assert not response.ok, f"Expected response to be False, but got {response.ok}"
-
     assert response.json()["error"] == "Missing password", "Expected error message 'Missing password', but got a different error"
 
 @pytest.mark.parametrize("password", [("pistol")])
