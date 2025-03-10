@@ -14,5 +14,5 @@ This project is part of my learning journey in API testing using Python. It incl
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/api-testing-python.git
-   cd api-testing-python
+   git clone https://github.com/your-username/api-testing-lab.git
+   cd api-testing-lab
