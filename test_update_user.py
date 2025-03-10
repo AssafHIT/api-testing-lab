@@ -1,6 +1,7 @@
 import requests
 import pytest
 from datetime import datetime, timezone
+from config import base_url
 
 def verify_updated_at(response, current_time):
     updated_at = datetime.fromisoformat(response.json().get("updatedAt").replace("Z", "+00:00"))

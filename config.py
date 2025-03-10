@@ -1,1 +1,1 @@
-base_url = "http://reqres.in"
+base_url = "https://reqres.in/api"

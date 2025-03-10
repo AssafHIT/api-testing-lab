@@ -1,5 +1,6 @@
 import requests
 import pytest
+from config import base_url
 
 @pytest.mark.parametrize("name, job", [
     ("Assaf Yehezkel", "Automation Developer"),
@@ -11,7 +12,7 @@ def test_create_user_happy_flow(name, job):
         "job": job
     }
     response = requests.post(
-        url = "https://reqres.in/api/users",
+        url = f"{base_url}/users",
         json = created_user_data
     )
     assert response.status_code == 201, f"Expected status code 200, but got {response.status_code}"
